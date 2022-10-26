@@ -66,7 +66,7 @@ function Home() {
                     </svg>
                 </div>
                 {/* Content */}
-                <div className="flex-1 flex flex-col mt-[30px] sm:max-h-[430px] px-[15px] pb-[15px]">
+                <div className="flex-1 flex flex-col mt-[30px] max-h-[calc(100%-150px)] sm:max-h-[430px] px-[15px] pb-[15px]">
                     <h1 className="text-[22px]">
                         Date: {new Date().toDateString()}
                     </h1>
