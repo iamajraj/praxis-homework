@@ -11,7 +11,11 @@ const AdminHomeworkCard = ({ homework, openHomeworkModal }) => {
                     className="w-full h-[120px] object-cover"
                 />
             )}
-            <p className="text-[14px] py-[15px] px-[10px]">{homework.topic}</p>
+            <p className="text-[14px] py-[15px] px-[10px]">
+                {homework.topic.length > 150
+                    ? homework.topic.slice(0, 150) + "..."
+                    : homework.topic}
+            </p>
             <div className="bg-gray-100 py-[5px] pr-[5px] mt-auto">
                 <svg
                     onClick={() => openHomeworkModal(homework.id)}
