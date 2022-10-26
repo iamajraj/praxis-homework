@@ -26,7 +26,16 @@ const HomeCard = ({ homework, category }) => {
                         className="max-h-[100px] h-full w-full object-cover mt-[10px] cursor-pointer"
                     />
                 )}
-                <p className="p-[10px] text-[14px]">{homework.topic}</p>
+                {category === "Listening" ? (
+                    <a
+                        className="underline block p-[10px]"
+                        href={homework.topic}
+                    >
+                        {homework.topic}
+                    </a>
+                ) : (
+                    <p className="p-[10px] text-[14px]">{homework.topic}</p>
+                )}
             </div>
             {open && (
                 <Lightbox
