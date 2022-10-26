@@ -83,7 +83,7 @@ const ViewHomework = () => {
             </div>
             {/* Modal */}
             <div
-                className={`opacity-0 pointer-events-none absolute flex items-center justify-center bg-[#00000050] inset-0 ${
+                className={`opacity-0 pointer-events-none fixed flex items-center justify-center bg-[#00000050] inset-0 h-full ${
                     deleteModal ? "opacity-100 pointer-events-auto" : ""
                 }`}
             >
