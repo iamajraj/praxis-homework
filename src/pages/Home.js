@@ -43,8 +43,8 @@ function Home() {
     }, []);
 
     return (
-        <div className="w-full min-h-screen flex items-center justify-center">
-            <div className="w-full max-w-[400px] border border-gray-200 min-h-[550px] rounded-md shadow-md flex flex-col mx-[10px] my-[15px] overflow-hidden">
+        <div className="w-full h-screen sm:h-auto min-h-screen flex sm:items-center sm:justify-center">
+            <div className="w-full flex-1 h-full sm:max-w-[400px] sm:border sm:border-gray-200 sm:min-h-[550px] sm:rounded-md shadow-md flex flex-col sm:mx-[10px] sm:my-[15px] overflow-hidden">
                 <div className="w-full bg-indigo-500 py-[10px] relative">
                     <h1 className="text-[22px] text-center text-white">
                         Homeworks
@@ -66,7 +66,7 @@ function Home() {
                     </svg>
                 </div>
                 {/* Content */}
-                <div className="flex-1 flex flex-col mt-[30px] max-h-[430px] px-[15px] pb-[15px]">
+                <div className="flex-1 flex flex-col mt-[30px] sm:max-h-[430px] px-[15px] pb-[15px]">
                     <h1 className="text-[22px]">
                         Date: {new Date().toDateString()}
                     </h1>
